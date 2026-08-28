@@ -1,0 +1,233 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #087b8b,
+        #14546b,
+        #102d52
+    );
+}
+
+
+/* ================================
+   CARD DO CADASTRO
+================================ */
+
+#cadastro {
+    width: 370px;
+    min-height: 800px;
+
+    padding: 25px 50px 35px;
+
+    background: #e5f0f3;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25),
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo {
+    width: 240px;
+    height: 95px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 8px;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+#cadastro header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* Título Cadastro */
+
+#cadastro header h1 {
+    color: #17385d;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Texto preenchimento obrigatório */
+
+#cadastro header p {
+    color: #17385d;
+
+    font-size: 10px;
+
+    margin: 0;
+}
+
+
+/* ================================
+   LABELS
+================================ */
+
+#cadastro label {
+    display: block;
+
+    color: #17385d;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   CAMPOS DE INPUT
+================================ */
+
+#cadastro input {
+    width: 100%;
+    height: 36px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    background: #5ba5be;
+
+    padding: 0 12px;
+
+    color: white;
+
+    font-size: 14px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        inset 0 1px 2px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s ease;
+}
+
+
+/* Campo selecionado */
+
+#cadastro input:focus {
+    background: #63aec7;
+
+    box-shadow:
+        0 0 0 2px rgba(40, 104, 201, 0.35);
+}
+
+
+/* ================================
+   BOTÃO CADASTRAR
+================================ */
+
+#botaoCadastrar {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #17166f,
+        #3029a8
+    );
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 15px rgba(30, 25, 110, 0.35);
+
+    transition: 0.25s ease;
+}
+
+
+/* Botão ao passar o mouse */
+
+#botaoCadastrar:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #24218d,
+        #3d36c5
+    );
+
+    box-shadow:
+        0 10px 20px rgba(30, 25, 110, 0.45);
+}
+
+
+/* Botão ao clicar */
+
+#botaoCadastrar:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 500px) {
+
+    #cadastro {
+        width: 90%;
+
+        min-height: auto;
+
+        padding: 25px 30px 30px;
+    }
+
+    .logo {
+        width: 220px;
+        height: 85px;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #7892a3, #315c82, #163a5c);
+}
+
+/* Espaço que você já possui no HTML */
+#pulo {
+    display: none;
+}
+
+/* Quadro principal */
+.quadro {
+    width: 400px;
+    min-height: 520px;
+
+    padding: 35px 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.88);
+
+    border-radius: 35px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo */
+#imagem {
+    width: 230px;
+    max-width: 100%;
+
+    margin-bottom: 30px;
+}
+
+/* Título */
+.quadro h3 {
+    font-size: 26px;
+
+    color: #24354a;
+
+    margin-bottom: 20px;
+}
+
+/* Textos */
+.quadro p {
+    color: #4d5c6b;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+/* Espaço antes do campo */
+.quadro br {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Texto do E-mail */
+.quadro p strong {
+    color: #24354a;
+
+    font-size: 17px;
+}
+
+/* Campo de e-mail */
+.quadro input {
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    border: 2px solid #c7d3df;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Quando clicar no campo */
+.quadro input:focus {
+    border-color: #1f5aa6;
+
+    box-shadow: 0 0 0 4px rgba(31, 90, 166, 0.15);
+}
+
+/* Botão */
+.quadro button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #1f5aa6, #173f85);
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 20px rgba(31, 90, 166, 0.3);
+}
+
+/* Efeito ao passar o mouse */
+.quadro button:hover {
+    transform: translateY(-3px);
+
+    background: linear-gradient(90deg, #286bbf, #1a4b9c);
+
+    box-shadow: 0 12px 25px rgba(31, 90, 166, 0.45);
+}
+
+/* Celular */
+@media (max-width: 500px) {
+
+    .quadro {
+        width: 90%;
+
+        padding: 35px 25px;
+    }
+
+    #imagem {
+        width: 200px;
+    }
+
+    .quadro h3 {
+        font-size: 22px;
+    }
+}
