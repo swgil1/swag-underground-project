@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "swag",
+  "version": "1.0.0",
+  "main": "swag.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

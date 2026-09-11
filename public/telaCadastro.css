@@ -16,12 +16,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(
-        135deg,
-        #087b8b,
-        #14546b,
-        #102d52
-    );
+    background: linear-gradient(135deg, #7892a3, #315c82, #163a5c);
 }
 
 
