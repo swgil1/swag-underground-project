@@ -226,3 +226,18 @@ body {
         height: 85px;
     }
 }
+
+a{
+    color: #17166f;
+    padding-top: 20px;
+    padding-left: 45px;
+    font-size: 13px;
+}
+
+a :hover{
+        transform: translateY(-2px);
+        
+        box-shadow:
+        0 10px 20px rgba(30, 25, 110, 0.45);
+
+}

@@ -1,9 +1,9 @@
 const campoEmail = document.getElementById("email");
 const campoSenha = document.getElementById("senha");
-const botao = document.getElementById("botaoEntrar");
+const botao = document.getElementById("continuar");
 const mensagem = document.getElementById("mensagem");
 botao.addEventListener("click", function () {
-    const email = campoEmail.value.trim();
+    const email = campoEmail.value;
     const senha = campoSenha.value;
     if (email === "" || senha === "") {
         alert("Preencha email e senha.");
@@ -26,6 +26,6 @@ botao.addEventListener("click", function () {
             }
             // Guarda o usuário logado nesta aba/sessão
             sessionStorage.setItem("usuarioLogado", JSON.stringify(resultado.dados));
-            window.location.href = "bemvindo.html";
+            window.location.href = "teste.html";
         });
 });
