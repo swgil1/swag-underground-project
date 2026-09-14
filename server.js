@@ -67,6 +67,24 @@ app.get("/usuarios", async (req, res) => {
     }
 });
 
+app.post("/login", (req, res) => {
+    const { email, senha } = req.body;
+    if (!email || !senha) {
+        return res.status(400).json({ erro: "Preencha email e senha." });
+    }
+    buscarUsuarioPorEmail(email, function (erro, usuario) {
+        if (!usuario) {
+            return res.status(401).json({ erro: "E-mail ou senha inválidos." });
+        }
+        const senhaConfere = bcrypt.compareSync(senha, usuario.senha);
+        if (!senhaConfere) {
+            return res.status(401).json({ erro: "E-mail ou senha inválidos." });
+        }
+        // Login OK — nunca devolvemos a senha, nem o hash dela
+        res.json({ id: usuario.id, nome: usuario.nome, email: usuario.email });
+    });
+});
+
 // Liga o servidor e mantém ele "escutando" a porta 3000
 app.listen(PORTA, () => {
     console.log(`Servidor rodando em http://localhost:${PORTA}`);
